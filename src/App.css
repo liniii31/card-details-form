@@ -1,38 +1,126 @@
-.App {
+*{
+  margin:0;
+  padding:0;
+}
+.side-nav{
+  height:753px;
+  width:400px;
+  background: url('../public/images/bg-main-desktop.png');
+  z-index :-1;
+}
+.card-front{
+  position: absolute; 
+  left : 200px;
+  top : 150px;
+  z-index: 1;
+}
+.card-back{
+  position : absolute;
+  left : 300px;
+  top : 430px;
+  z-index: 1;
+}
+.card-forms, .card-submit{
+  position: absolute; 
+  left : 950px;
+  top : 200px;
+}
+.card-submit{
+  display: none;
+}
+label{
+  display: block;
+  margin-left : 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.form-info{
+  margin :30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.inline{
+  display: inline-block;
+}
+input{
+  margin : 5px;
+  width : 300px;
+  height : 30px;
+  border-radius: 7px;
+  border-color: hsl(279, 6%, 55%);
+}
+::placeholder {
+  font-weight: bold;
+}
+.less-w{
+  width : 50px;
+}
+.less-c{
+  width : 90px;
+}
+button{
   text-align: center;
+  display: block;
+  margin-left:35px;
+  width : 310px;
+  height : 35px;
+  background-color: hsl(278, 68%, 11%);
+  color:white;
+  border-radius:7px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo, .thanks, .para{
+  text-align: center;
+  margin-top : 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.para, .thanks{
+  padding-left: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.thanks{
+  font-size: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.button-two{
+  text-align: center;
+  display: block;
+  margin-top:30px;
+  width : 310px;
+  height : 35px;
+  background-color: hsl(278, 68%, 11%);
+  color:white;
+  border-radius:7px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-details{
+  display: none;
+  color : white;
+  
+}
+.card-name{
+  position: absolute; 
+  left:20px;
+  top : 200px;
+  z-index: 9;
+}
+.card-date{
+  position: absolute; 
+  left:380px;
+  top : 200px;
+  z-index: 9;
+}
+.card-number{
+  position: absolute; 
+  font-size: 30px;
+  left: 90px;
+  top : 100px;
+  z-index: 9;
+}
+.card-cvv{
+  position : absolute;
+  left : 350px;
+  top : 110px;
+  z-index: 9;
+}
+.error-name,.error-number,.error-date,.error-cvv{
+  visibility: hidden;
+  color:red;
+  margin-left : 5px;
+  font-size: 10px;
+  font-weight: bold;
 }
