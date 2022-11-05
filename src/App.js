@@ -126,6 +126,7 @@ function App() {
   }
   return (
     <div className="App">
+      <div className='head-bar'></div>
       <div className="side-nav"></div>
       <div className="card-front">
         <img src={image1} alt="card front" />

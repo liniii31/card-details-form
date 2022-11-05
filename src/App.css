@@ -2,7 +2,11 @@
   margin:0;
   padding:0;
 }
+.head-bar{
+  display:none;
+}
 .side-nav{
+  display: block;
   height:753px;
   width:400px;
   background: url('../public/images/bg-main-desktop.png');
@@ -123,4 +127,32 @@ button{
   margin-left : 5px;
   font-size: 10px;
   font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+  body{
+    overflow-x: hidden;
+  }
+  .side-nav{
+    display: none;
+  }
+  .head-bar{
+    display:block;
+    background:url("../public/images/bg-main-mobile.png");
+    width:500px;
+    height:300px;
+  }
+  .card-front{
+    top:180px;
+    left:20px;
+    z-index:9;
+  }
+  .card-back{
+    top:20px;
+    left:30px;
+    z-index:4;
+  }
+  .card-forms, .card-submit{
+    left : 50px;
+    top : 450px;
+  }
 }
