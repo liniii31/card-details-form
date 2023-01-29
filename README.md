@@ -1,4 +1,7 @@
 # Card Details Project
+
+Live Link : https://glowing-raindrop-06389e.netlify.app/
+
 ## Technologies Used
 - FrontEnd : ReactJS
 - Frontend Deployment : Netlify app
